@@ -49,3 +49,6 @@ Topic: —
 Red zone: —
 Current task: —
 Already mastered: —
+
+
+When I mention a task file (e.g. “start tasks/m0-lab-01-keys.md”), read it fully before doing anything and treat its rules as binding for the session.
