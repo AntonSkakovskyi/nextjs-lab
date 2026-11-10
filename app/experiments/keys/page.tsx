@@ -29,9 +29,9 @@ const KeysPage = () => {
     setIsKeyId(mode => !mode)
   }
 
-  const onDelete = (label: string) =>{
+  const onDelete = (id: string) =>{
     setArray(a => {
-      const newArray = a.filter(item => item.label !== label)
+      const newArray = a.filter(item => item.id !== id)
       return newArray
     })
   }
@@ -47,7 +47,7 @@ const KeysPage = () => {
       {array.map((item, index) => {
         return <li key={isKeyId ? item.id : index}>
           <ListItem item={item}/>
-          <button onClick={() => onDelete(item.label)}>Delete</button>
+          <button onClick={() => onDelete(item.id)}>Delete</button>
         </li>
       })}
     </ol>
